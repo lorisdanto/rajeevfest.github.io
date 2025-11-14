@@ -69,6 +69,35 @@
       border-radius: 0.5rem;
       margin-bottom: 1.5rem;
     }
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .speaker-card {
+      background: #f7fafc;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+    .speaker-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+      border: 3px solid #2c5364;
+    }
+    .speaker-name {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .speaker-affiliation {
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -89,11 +118,44 @@
     </section>
 
     <section>
-      <h2>Organizational Details</h2>
-      <p><strong>Contact information of organizers:</strong><br>
-        Loris D’Antoni (<a href="mailto:ldantoni@ucsd.edu">ldantoni@ucsd.edu</a>)<br>
-        Swarat Chaudhuri (<a href="mailto:swarat@cs.utexas.edu">swarat@cs.utexas.edu</a>)
-      </p>
+      <h2>Confirmed Speakers</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <img src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/david_dill.webp?orig=png" alt="Photo of David Dill">
+          <div class="speaker-name">David Dill</div>
+          <div class="speaker-affiliation">Stanford University</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://etaps.org/2023/images/speakers/thomas-henzinger.jpg" alt="Photo of Tom Henzinger">
+          <div class="speaker-name">Tom Henzinger</div>
+          <div class="speaker-affiliation">Institute of Science and Technology Austria (ISTA)</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://angelhof.github.io/files/konstantinos_smallest.jpg" alt="Photo of Konstantinos Kallas">
+          <div class="speaker-name">Konstantinos Kallas</div>
+          <div class="speaker-affiliation">UCLA</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://2019.ase-conferences.org/getProfileImage/salvatorelatorre/c2628a4d-6d7b-4407-a663-028367182f08/small.jpg?1711642488000" alt="Placeholder image for Salvatore La Torre">
+          <div class="speaker-name">Salvatore La Torre</div>
+          <div class="speaker-affiliation">Università degli Studi di Salerno</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=16932&s=300" alt="Photo of Madhusudan Parthasarathy">
+          <div class="speaker-name">Madhusudan Parthasarathy</div>
+          <div class="speaker-affiliation">University of Illinois at Urbana-Champaign</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://people.csail.mit.edu/asolar/images/asolar_head.jpg" alt="Photo of Armando Solar-Lezama">
+          <div class="speaker-name">Armando Solar-Lezama</div>
+          <div class="speaker-affiliation">MIT CSAIL</div>
+        </div>
+        <div class="speaker-card">
+          <img src="https://profiles.rice.edu/sites/g/files/bxs3881/files/2020-07/MosheVardi-500x500.jpg" alt="Photo of Moshe Y. Vardi">
+          <div class="speaker-name">Moshe Vardi</div>
+          <div class="speaker-affiliation">Rice University</div>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -109,6 +171,14 @@
         <p><span class="time">15:15 – 16:30</span> Afternoon Session II</p>
         <p><span class="time">16:30 – 17:00</span> Closing Remarks</p>
       </div>
+    </section>
+
+    <section>
+      <h2>Organizational Details</h2>
+      <p><strong>Contact information of organizers:</strong><br>
+        Loris D’Antoni (<a href="mailto:ldantoni@ucsd.edu">ldantoni@ucsd.edu</a>)<br>
+        Swarat Chaudhuri (<a href="mailto:swarat@cs.utexas.edu">swarat@cs.utexas.edu</a>)
+      </p>
     </section>
   </main>
 
