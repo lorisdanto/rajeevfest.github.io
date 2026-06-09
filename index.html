@@ -1,40 +1,304 @@
 ```html
-<section>
-  <h2>Confirmed Speakers</h2>
-  <div class="speakers-grid">
-    ...
-    <div class="speaker-card">
-      <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Orna%20Kupferman.jpg" alt="Photo of Orna Kupferman">
-      <div class="speaker-name">Orna Kupferman</div>
-      <div class="speaker-affiliation">Hebrew University of Jerusalem</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RajeevFest: A Celebration of Rajeev Alur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    a {
+      color: #f9d648;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: #ffe27a;
+      text-decoration: none;
+    }
+
+    header a {
+      color: #ffd966;
+    }
+
+    header a:hover {
+      color: #fff2b2;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem 1rem;
+      background: radial-gradient(circle at 20% 80%, #0a2540, #1b3b5f);
+      background-image: linear-gradient(125deg, #0a2540 0%, #1b3b5f 40%, #204a66 100%), url('https://upload.wikimedia.org/wikipedia/commons/2/23/Automata_state_diagram_example.svg');
+      background-blend-mode: overlay;
+      background-size: cover;
+      color: #f0f0f0;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: 'Merriweather', serif;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      color: #203a43;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .schedule {
+      border-left: 3px solid #2c5364;
+      padding-left: 1rem;
+    }
+
+    .time {
+      font-weight: 600;
+      color: #203a43;
+    }
+
+    .info-box {
+      background: #eef3f8;
+      border-left: 4px solid #2c5364;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .speaker-card {
+      background: #f7fafc;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    .speaker-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+      border: 3px solid #2c5364;
+    }
+
+    .speaker-name {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .speaker-affiliation {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .talk-title {
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RajeevFest</h1>
+  <p>A Celebration of Rajeev Alur</p>
+  <p>
+    July 24th, 2026 · Lisbon, Portugal<br>
+    Co-located with <a href="https://www.floc26.org/">FLoC 2026</a>
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <p>
+      This workshop celebrates the contributions of Rajeev Alur (on the occasion of his 60th birthday) to the theory and applications of logic in computer science, computer-aided verification, and the foundations of computer science. In addition to celebrating his momentous achievements, this workshop will also honor Rajeev’s personal engagement with and service to the FLoC and broader computer science communities. We hope to see many of you there!
+    </p>
+  </section>
+
+  <section>
+    <h2>Confirmed Speakers</h2>
+
+    <div class="speakers-grid">
+
+      <div class="speaker-card">
+        <img src="https://biox.stanford.edu/files/styles/profile_thumbnail/public/david_dill.webp?orig=png" alt="Photo of David Dill">
+        <div class="speaker-name">David Dill</div>
+        <div class="speaker-affiliation">Stanford University</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://etaps.org/2023/images/speakers/thomas-henzinger.jpg" alt="Photo of Thomas Henzinger">
+        <div class="speaker-name">Thomas Henzinger</div>
+        <div class="speaker-affiliation">Institute of Science and Technology Austria (ISTA)</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://angelhof.github.io/files/konstantinos_smallest.jpg" alt="Photo of Konstantinos Kallas">
+        <div class="speaker-name">Konstantinos Kallas</div>
+        <div class="speaker-affiliation">UCLA</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://2019.ase-conferences.org/getProfileImage/salvatorelatorre/c2628a4d-6d7b-4407-a663-028367182f08/small.jpg?1711642488000" alt="Photo of Salvatore La Torre">
+        <div class="speaker-name">Salvatore La Torre</div>
+        <div class="speaker-affiliation">Università degli Studi di Salerno</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://www.cs.huji.ac.il/~ornak/ornak.jpg" alt="Photo of Orna Kupferman">
+        <div class="speaker-name">Orna Kupferman</div>
+        <div class="speaker-affiliation">Hebrew University of Jerusalem</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://ws.engr.illinois.edu/directory/viewphoto.aspx?photo=16932&s=300" alt="Photo of Madhusudan Parthasarathy">
+        <div class="speaker-name">Madhusudan Parthasarathy</div>
+        <div class="speaker-affiliation">University of Illinois Urbana-Champaign</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://people.csail.mit.edu/asolar/images/asolar_head.jpg" alt="Photo of Armando Solar-Lezama">
+        <div class="speaker-name">Armando Solar-Lezama</div>
+        <div class="speaker-affiliation">MIT CSAIL</div>
+      </div>
+
+      <div class="speaker-card">
+        <img src="https://profiles.rice.edu/sites/g/files/bxs3881/files/2020-07/MosheVardi-500x500.jpg" alt="Photo of Moshe Vardi">
+        <div class="speaker-name">Moshe Vardi</div>
+        <div class="speaker-affiliation">Rice University</div>
+      </div>
+
     </div>
-    ...
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Tentative Schedule</h2>
-  <div class="schedule">
-    <p><span class="time">09:00 – 09:15</span> Welcome and Opening Remarks</p>
+  <section>
+    <h2>Tentative Schedule</h2>
 
-    <p><span class="time">09:15 – 09:45</span> David Dill — <em>Advising Rajeev</em></p>
-    <p><span class="time">09:45 – 10:15</span> Thomas A. Henzinger — <em>Stateful Thinking</em></p>
-    <p><span class="time">10:15 – 10:45</span> Orna Kupferman — <em>Title TBA</em></p>
+    <div class="schedule">
 
-    <p><span class="time">10:45 – 11:15</span> Coffee Break</p>
+      <p><span class="time">09:00 – 09:15</span> Welcome and Opening Remarks</p>
 
-    <p><span class="time">11:15 – 11:45</span> Salvatore La Torre — <em>A Trajectory in Verification: Foundations with Rajeev and the Shift to Practice</em></p>
-    <p><span class="time">11:45 – 12:15</span> Konstantinos Kallas — <em>If Practice Won't Come to Theory, Then Theory Must Go to Practice: How to Analyze and Optimize Shell Scripts</em></p>
+      <p>
+        <span class="time">09:15 – 09:45</span>
+        David Dill<br>
+        <span class="talk-title">Advising Rajeev</span>
+      </p>
 
-    <p><span class="time">12:15 – 13:45</span> Lunch Break</p>
+      <p>
+        <span class="time">09:45 – 10:15</span>
+        Thomas A. Henzinger<br>
+        <span class="talk-title">Stateful Thinking</span>
+      </p>
 
-    <p><span class="time">13:45 – 14:15</span> Armando Solar-Lezama — <em>ExCAPE and the Coming of Age of Program Synthesis</em></p>
-    <p><span class="time">14:15 – 14:45</span> Madhusudan Parthasarathy — <em>Title TBA</em></p>
-    <p><span class="time">14:45 – 15:15</span> Moshe Vardi — <em>From Verification to Analysis</em></p>
+      <p>
+        <span class="time">10:15 – 10:45</span>
+        Orna Kupferman<br>
+        <span class="talk-title">Title TBA</span>
+      </p>
 
-    <p><span class="time">15:15 – 15:45</span> Coffee Break</p>
-    <p><span class="time">15:45 – 16:30</span> Panel / Open Discussion</p>
-    <p><span class="time">16:30 – 17:00</span> Closing Remarks</p>
-  </div>
-</section>
+      <p><span class="time">10:45 – 11:15</span> Coffee Break</p>
+
+      <p>
+        <span class="time">11:15 – 11:45</span>
+        Salvatore La Torre<br>
+        <span class="talk-title">A Trajectory in Verification: Foundations with Rajeev and the Shift to Practice</span>
+      </p>
+
+      <p>
+        <span class="time">11:45 – 12:15</span>
+        Konstantinos Kallas<br>
+        <span class="talk-title">If Practice Won't Come to Theory, Then Theory Must Go to Practice: How to Analyze and Optimize Shell Scripts</span>
+      </p>
+
+      <p><span class="time">12:15 – 13:45</span> Lunch Break</p>
+
+      <p>
+        <span class="time">13:45 – 14:15</span>
+        Armando Solar-Lezama<br>
+        <span class="talk-title">ExCAPE and the Coming of Age of Program Synthesis</span>
+      </p>
+
+      <p>
+        <span class="time">14:15 – 14:45</span>
+        Madhusudan Parthasarathy<br>
+        <span class="talk-title">Title TBA</span>
+      </p>
+
+      <p>
+        <span class="time">14:45 – 15:15</span>
+        Moshe Vardi<br>
+        <span class="talk-title">From Verification to Analysis</span>
+      </p>
+
+      <p><span class="time">15:15 – 15:45</span> Coffee Break</p>
+
+      <p><span class="time">15:45 – 16:30</span> Reflections on Rajeev's Impact and Open Discussion</p>
+
+      <p><span class="time">16:30 – 17:00</span> Closing Remarks</p>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Organizational Details</h2>
+
+    <p>
+      <strong>Contact information of organizers:</strong><br>
+      Loris D’Antoni (<a href="mailto:ldantoni@ucsd.edu">ldantoni@ucsd.edu</a>)<br>
+      Swarat Chaudhuri (<a href="mailto:swarat@cs.utexas.edu">swarat@cs.utexas.edu</a>)
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 RajeevFest Organizing Committee</p>
+</footer>
+
+</body>
+</html>
 ```
